@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satvik Tanuboddi | End-to-End Data Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">ST<span class="accent">.</span></a>
+            <div class="nav-links">
+                <a href="#solutions">Solutions</a>
+                <a href="#skills">Tech Stack</a>
+                <a href="#work">Work</a>
+                <a href="#experience">Background</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#solutions">Solutions</a>
+        <a href="#skills">Tech Stack</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Background</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge reveal-up">
+                    <span class="pulse-dot"></span>
+                    <span>End-to-End Data Solutions</span>
+                </div>
+                <h1 class="hero-title reveal-up">
+                    <span class="line">I build the</span>
+                    <span class="line"><span class="gradient-text">data engine</span></span>
+                    <span class="line">behind your</span>
+                    <span class="line">decisions<span class="accent">.</span></span>
+                </h1>
+                <div class="hero-subtitle reveal-up">
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+                <p class="hero-desc reveal-up">
+                    From raw data to revenue. I architect cloud pipelines, build ML models,
+                    and deliver dashboards that move the needle &mdash; so you can stop guessing
+                    and start knowing.
+                </p>
+                <div class="hero-cta reveal-up">
+                    <a href="#solutions" class="btn btn-primary">
+                        <span>See What I Do</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">Start a Project</a>
+                </div>
+            </div>
+            <div class="hero-image reveal-up">
+                <div class="photo-container">
+                    <div class="photo-glow"></div>
+                    <img src="assets/photo.png" alt="Satvik Tanuboddi" />
+                    <div class="photo-border"></div>
+                </div>
+                <div class="hero-stats-row">
+                    <div class="stat-card">
+                        <span class="stat-number" data-count="4">0</span><span class="accent">+</span>
+                        <span class="stat-label">Years Exp</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-count="15">0</span><span class="accent">+</span>
+                        <span class="stat-label">Solutions</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-count="5">0</span><span class="accent">+</span>
+                        <span class="stat-label">Industries</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator reveal-up">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Data Pipeline Animation Divider -->
+    <div class="pipeline-divider">
+        <div class="pipeline-track">
+            <div class="pipeline-item">Ingest</div>
+            <div class="pipeline-dot"></div>
+            <div class="pipeline-item">Transform</div>
+            <div class="pipeline-dot"></div>
+            <div class="pipeline-item">Model</div>
+            <div class="pipeline-dot"></div>
+            <div class="pipeline-item">Visualize</div>
+            <div class="pipeline-dot"></div>
+            <div class="pipeline-item">Predict</div>
+            <div class="pipeline-dot"></div>
+            <div class="pipeline-item">Deploy</div>
+            <div class="pipeline-dot"></div>
+            <div class="pipeline-item">Monitor</div>
+            <div class="pipeline-dot"></div>
+            <div class="pipeline-item">Optimize</div>
+            <div class="pipeline-dot"></div>
+            <div class="pipeline-item">Ingest</div>
+            <div class="pipeline-dot"></div>
+            <div class="pipeline-item">Transform</div>
+            <div class="pipeline-dot"></div>
+            <div class="pipeline-item">Model</div>
+            <div class="pipeline-dot"></div>
+            <div class="pipeline-item">Visualize</div>
+            <div class="pipeline-dot"></div>
+            <div class="pipeline-item">Predict</div>
+            <div class="pipeline-dot"></div>
+            <div class="pipeline-item">Deploy</div>
+            <div class="pipeline-dot"></div>
+            <div class="pipeline-item">Monitor</div>
+            <div class="pipeline-dot"></div>
+            <div class="pipeline-item">Optimize</div>
+        </div>
+    </div>
+
+    <!-- Solutions Section -->
+    <section class="section solutions" id="solutions">
+        <div class="container">
+            <h2 class="section-title reveal-up">
+                <span class="section-number">01.</span> What I Deliver
+            </h2>
+            <p class="section-subtitle reveal-up">End-to-end data solutions that take you from messy spreadsheets to boardroom-ready insights.</p>
+            <div class="solutions-grid">
+                <div class="solution-card reveal-up">
+                    <div class="solution-number">01</div>
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>Data Pipeline Architecture</h3>
+                    <p>Scalable cloud pipelines on AWS &amp; Azure that ingest, clean, and structure your data automatically. Medallion architecture, Delta Lake, real-time streaming &mdash; built for reliability.</p>
+                    <div class="solution-tags">
+                        <span>Spark</span><span>Airflow</span><span>Kafka</span><span>Snowflake</span><span>Databricks</span>
+                    </div>
+                </div>
+                <div class="solution-card reveal-up">
+                    <div class="solution-number">02</div>
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m11-7h-6m-6 0H1m18.07-5.07l-4.24 4.24M9.17 14.83l-4.24 4.24m0-14.14l4.24 4.24m5.66 5.66l4.24 4.24"/></svg>
+                    </div>
+                    <h3>Machine Learning &amp; Predictive Analytics</h3>
+                    <p>Production-grade ML models that forecast demand, predict churn, optimize pricing, and segment customers. From experimentation to MLOps deployment with A/B testing.</p>
+                    <div class="solution-tags">
+                        <span>scikit-learn</span><span>XGBoost</span><span>MLOps</span><span>A/B Testing</span>
+                    </div>
+                </div>
+                <div class="solution-card reveal-up">
+                    <div class="solution-number">03</div>
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                    </div>
+                    <h3>BI Dashboards &amp; Analytics</h3>
+                    <p>Executive-ready dashboards in Power BI and Tableau that tell the story your data is trying to tell. KPI tracking, drill-downs, and row-level security for enterprise.</p>
+                    <div class="solution-tags">
+                        <span>Power BI</span><span>Tableau</span><span>DAX</span><span>SQL Analytics</span>
+                    </div>
+                </div>
+                <div class="solution-card reveal-up">
+                    <div class="solution-number">04</div>
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 14.899A7 7 0 1115.71 8h1.79a4.5 4.5 0 012.5 8.242"/><path d="M12 12v9"/><path d="M8 17l4 4 4-4"/></svg>
+                    </div>
+                    <h3>Cloud Data Platform Design</h3>
+                    <p>End-to-end data lakehouse and warehouse architecture on AWS and Azure. Data modeling, governance, CI/CD, and infrastructure that scales with your business.</p>
+                    <div class="solution-tags">
+                        <span>AWS</span><span>Azure Synapse</span><span>Docker</span><span>CI/CD</span><span>dbt</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack / Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal-up">
+                <span class="section-number">02.</span> Tech Stack
+            </h2>
+            <p class="section-subtitle reveal-up">The tools I use to build data solutions across the entire stack.</p>
+
+            <!-- Tech Cloud -->
+            <div class="tech-cloud reveal-up">
+                <div class="tech-hex-grid">
+                    <div class="tech-hex" data-category="lang"><span>Python</span></div>
+                    <div class="tech-hex" data-category="lang"><span>SQL</span></div>
+                    <div class="tech-hex" data-category="lang"><span>PySpark</span></div>
+                    <div class="tech-hex" data-category="lang"><span>R</span></div>
+                    <div class="tech-hex" data-category="eng"><span>Spark</span></div>
+                    <div class="tech-hex" data-category="eng"><span>Databricks</span></div>
+                    <div class="tech-hex" data-category="eng"><span>Airflow</span></div>
+                    <div class="tech-hex" data-category="eng"><span>Kafka</span></div>
+                    <div class="tech-hex" data-category="eng"><span>Snowflake</span></div>
+                    <div class="tech-hex" data-category="eng"><span>Delta Lake</span></div>
+                    <div class="tech-hex" data-category="eng"><span>dbt</span></div>
+                    <div class="tech-hex" data-category="cloud"><span>AWS S3</span></div>
+                    <div class="tech-hex" data-category="cloud"><span>AWS Glue</span></div>
+                    <div class="tech-hex" data-category="cloud"><span>Redshift</span></div>
+                    <div class="tech-hex" data-category="cloud"><span>Azure Synapse</span></div>
+                    <div class="tech-hex" data-category="cloud"><span>Azure ADF</span></div>
+                    <div class="tech-hex" data-category="cloud"><span>Docker</span></div>
+                    <div class="tech-hex" data-category="cloud"><span>CI/CD</span></div>
+                    <div class="tech-hex" data-category="ml"><span>scikit-learn</span></div>
+                    <div class="tech-hex" data-category="ml"><span>XGBoost</span></div>
+                    <div class="tech-hex" data-category="ml"><span>Power BI</span></div>
+                    <div class="tech-hex" data-category="ml"><span>Tableau</span></div>
+                    <div class="tech-hex" data-category="ml"><span>DAX</span></div>
+                    <div class="tech-hex" data-category="ml"><span>statsmodels</span></div>
+                </div>
+                <div class="tech-legend">
+                    <button class="tech-filter active" data-filter="all">All</button>
+                    <button class="tech-filter" data-filter="lang">Languages</button>
+                    <button class="tech-filter" data-filter="eng">Data Engineering</button>
+                    <button class="tech-filter" data-filter="cloud">Cloud &amp; Infra</button>
+                    <button class="tech-filter" data-filter="ml">Analytics &amp; ML</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work / Case Studies Section -->
+    <section class="section work" id="work">
+        <div class="container">
+            <h2 class="section-title reveal-up">
+                <span class="section-number">03.</span> Solutions I've Built
+            </h2>
+            <p class="section-subtitle reveal-up">Real problems. Real data. Real impact.</p>
+            <div class="projects-grid">
+
+                <div class="project-card featured reveal-up">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <span class="project-category">Data Platform</span>
+                        <div class="project-links">
+                            <a href="https://github.com/SatvikReddyTanuboddi1/azure-advancement-data-platform" target="_blank" rel="noopener" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Azure Donor Analytics Platform</h3>
+                    <p class="project-desc">Architected a full data lakehouse for donor analytics &mdash; Bronze/Silver/Gold layers on Azure Synapse with automated pipelines and Power BI dashboards secured with row-level security.</p>
+                    <div class="project-impact">
+                        <span>Full Medallion Architecture</span>
+                        <span>Enterprise-grade RLS</span>
+                    </div>
+                    <div class="project-tech">
+                        <span>Azure Synapse</span><span>Power BI</span><span>Data Lake</span><span>RLS</span>
+                    </div>
+                </div>
+
+                <div class="project-card featured reveal-up">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <span class="project-category">Analytics Engineering</span>
+                        <div class="project-links">
+                            <a href="https://github.com/SatvikReddyTanuboddi1/DBT-Census-Affordability-main" target="_blank" rel="noopener" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Census Affordability Pipeline</h3>
+                    <p class="project-desc">Modern analytics engineering with dbt &mdash; modular SQL transformations, data quality testing, and reproducible models turning census data into actionable affordability insights.</p>
+                    <div class="project-impact">
+                        <span>Modular Data Models</span>
+                        <span>Automated Testing</span>
+                    </div>
+                    <div class="project-tech">
+                        <span>dbt</span><span>SQL</span><span>Data Modeling</span><span>Testing</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-up">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <span class="project-category">Real-time Data</span>
+                        <div class="project-links">
+                            <a href="https://github.com/SatvikReddyTanuboddi1/stock-trading-python-app" target="_blank" rel="noopener" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Stock Trading Intelligence</h3>
+                    <p class="project-desc">Real-time market data extraction and analysis using Polygon.io API &mdash; live streaming, signal detection, and automated trading insights.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Polygon.io</span><span>Streaming</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-up">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <span class="project-category">Cloud Pipeline</span>
+                        <div class="project-links">
+                            <a href="https://github.com/SatvikReddyTanuboddi1/Tokyo_Olympic_data_pipeline" target="_blank" rel="noopener" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Olympic Data Pipeline</h3>
+                    <p class="project-desc">Automated cloud pipeline for processing and analyzing large-scale Olympic datasets &mdash; ingestion, transformation, and analytics on Azure.</p>
+                    <div class="project-tech">
+                        <span>Azure</span><span>Pipeline</span><span>Analytics</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-up">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <span class="project-category">Machine Learning</span>
+                        <div class="project-links">
+                            <a href="https://github.com/SatvikReddyTanuboddi1/Credit-Card-Churn-Main" target="_blank" rel="noopener" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Credit Card Churn Predictor</h3>
+                    <p class="project-desc">Ensemble ML model predicting customer churn with advanced feature engineering &mdash; helping financial services retain high-value customers before they leave.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>scikit-learn</span><span>Classification</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-up">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <span class="project-category">Security ML</span>
+                        <div class="project-links">
+                            <a href="https://github.com/SatvikReddyTanuboddi1/Android-Malware-Detection-Using-Machine-Learning" target="_blank" rel="noopener" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Android Malware Detection</h3>
+                    <p class="project-desc">ML-based behavioral analysis system for detecting malicious Android applications &mdash; classification at scale for mobile security.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>ML</span><span>Security</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more-projects reveal-up">
+                <a href="https://github.com/SatvikReddyTanuboddi1?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline">
+                    View All on GitHub
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Background Section (Compact) -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title reveal-up">
+                <span class="section-number">04.</span> Where I've Done It
+            </h2>
+            <p class="section-subtitle reveal-up">Built data solutions across Fortune 500 companies, research institutions, and startups.</p>
+
+            <div class="exp-compact-grid">
+                <div class="exp-compact-card reveal-up">
+                    <div class="exp-compact-role">Data Analyst</div>
+                    <div class="exp-compact-company">EDISQUARE INC</div>
+                    <div class="exp-compact-what">ETL pipelines, ML segmentation, BI dashboards for marketing analytics</div>
+                    <div class="exp-compact-tags"><span>Spark</span><span>Power BI</span><span>A/B Testing</span></div>
+                </div>
+                <div class="exp-compact-card reveal-up">
+                    <div class="exp-compact-role">Data Analyst</div>
+                    <div class="exp-compact-company">University of South Florida</div>
+                    <div class="exp-compact-what">Causal inference models on federal datasets, 50% faster analytical turnaround</div>
+                    <div class="exp-compact-tags"><span>Econometrics</span><span>Python</span><span>PSM</span></div>
+                </div>
+                <div class="exp-compact-card reveal-up">
+                    <div class="exp-compact-role">Data Analyst (BI)</div>
+                    <div class="exp-compact-company">Premier Distilleries</div>
+                    <div class="exp-compact-what">Supply chain analytics on AWS, executive dashboards for manufacturing ops</div>
+                    <div class="exp-compact-tags"><span>AWS</span><span>Tableau</span><span>Supply Chain</span></div>
+                </div>
+                <div class="exp-compact-card reveal-up">
+                    <div class="exp-compact-role">Data Scientist</div>
+                    <div class="exp-compact-company">Accenture</div>
+                    <div class="exp-compact-what">Enterprise ML for Campbell Soup &mdash; demand forecasting, trade optimization, MLOps</div>
+                    <div class="exp-compact-tags"><span>Databricks</span><span>PySpark</span><span>MLOps</span></div>
+                </div>
+                <div class="exp-compact-card reveal-up">
+                    <div class="exp-compact-role">Associate Data Scientist</div>
+                    <div class="exp-compact-company">Capgemini</div>
+                    <div class="exp-compact-what">Spark ETL pipelines, 30% pipeline accuracy improvement, automated reporting</div>
+                    <div class="exp-compact-tags"><span>Spark</span><span>AWS Glue</span><span>ETL</span></div>
+                </div>
+            </div>
+
+            <!-- Education inline -->
+            <div class="edu-row reveal-up">
+                <div class="edu-chip">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 6 3 6 3s6-1 6-3v-5"/></svg>
+                    <div>
+                        <strong>MS Business Analytics &amp; Information Systems</strong>
+                        <span>USF &bull; GPA 3.91 &bull; STEM</span>
+                    </div>
+                </div>
+                <div class="edu-chip">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 6 3 6 3s6-1 6-3v-5"/></svg>
+                    <div>
+                        <strong>B.Tech Computer Science &amp; Engineering (Data Science)</strong>
+                        <span>SRM University &bull; GPA 3.4</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal-up">
+                <span class="section-number">05.</span> Let's Build Something
+            </h2>
+            <div class="contact-content reveal-up">
+                <p class="contact-text">
+                    Have a data challenge? Need a pipeline that doesn't break at 3 AM?
+                    Want dashboards your CEO will actually use? Let's talk.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:vssrt0509@gmail.com" class="contact-card">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                        <span>vssrt0509@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/satvik-tanuboddi" target="_blank" rel="noopener" class="contact-card">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/SatvikReddyTanuboddi1" target="_blank" rel="noopener" class="contact-card">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="tel:+17179790509" class="contact-card">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        <span>+1 (717) 979-0509</span>
+                    </a>
+                </div>
+                <a href="mailto:vssrt0509@gmail.com" class="btn btn-primary btn-large">
+                    <span>Start a Conversation</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Satvik Tanuboddi &mdash; Turning Data Into Decisions</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
